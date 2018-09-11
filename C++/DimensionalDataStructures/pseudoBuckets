@@ -1,0 +1,49 @@
+knn (p, k) {
+  r = boxDim
+  while (fewer k neighbors) {
+    range(p, r)
+      sort neighbors
+      return neighbors[:k]
+      //probably use the nth_element here
+  }
+}
+rangeQuery(p, radius) {
+  find #divisions/radius
+  find box for p
+  for each box around p
+    for each point
+      if close
+        add to list
+}
+
+constructor (points[], #divisions) {
+  getBounds(points) -> w,h
+  boxSize = (max-min)/#divisions
+  for each point, p
+    findBucket(p) //returns an int[]
+    putinBucket(p)
+}
+int[] findBucket(p) {
+  for each dimension() {
+    index = (x-minX)/boxX
+
+  }
+}
+int[] -> list/bucket
+int arrayIndex (int[] points) {
+  for (dim = 0; dim < #dimensions; dim++) {
+    index += coordinates[dim] * #divisions ^ (#dim-dim-1);
+  }
+}
+DataMembers:
+listOfBuckets() //hashMap of fixed size integer arrays, coordinates with listOfBuckets
+boxSizes
+mins
+
+
+
+//behave as if we didn't know in advance how many dimensions we're working with
+
+int[] nextBox (int[]current, min[], max[]) {
+
+}

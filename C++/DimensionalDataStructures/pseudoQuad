@@ -1,0 +1,50 @@
+QuadTree
+
+DataMembers:
+root
+
+Node:
+bool isLeaf
+list of points
+4 children (northEast, northWest, southEast, southWest)
+
+constructor
+QuadTree(points, maxLeafSize) {
+  root = node(points, maxLeafSize)
+}
+
+nodeConstructor(points, maxLeafSize, aabb(points)) {
+
+}
+
+
+notes and how to use them:
+
+iter start, stop;
+int size = stop-start;
+int middle = start + size/2;
+point middleValue = *middle;
+
+//find first quartile and partition
+CompareBy<0> compareByX
+std::nth_element(start, start+size/4, end);
+Point quartileValue = *(start+size/4);
+
+
+
+int[] minCoords = findBucket(point - radius)
+int[] maxCoords = findBucket(point + radius)
+
+for each bucket from minCoords to maxCoords:
+  process bucket
+
+for (coords = minBucket; coords!=nextBucket(maxCoords); coords = nextBucket(coords) {
+  //how do we find the next bucket?
+  current[lastDimension]++;
+  for(i = lastDimension; i > 0; i--) {
+    if (current[i] > maxCoords[i]) {
+      current[i] = minCoords[i];
+      current[i-1]++;
+    } else 
+  }
+}

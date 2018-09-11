@@ -1,0 +1,71 @@
+DataMembers:
+treeNode
+root
+neighbors
+split dimension
+treeConstructor(points[]) {
+  root = Node<dimension0>(pointsBeg, pointsEnd)
+}
+nodeConstructor() {
+  find median dim
+  store median here
+  if (< points) {
+    left = Node(< points, (dim+1)%#dimensions)
+  }
+  if (> points) {
+    right = Node(>points, (dim+1) %#dimensions)
+  }
+}
+//need to do this for points on the left and on the right.
+//will be two separate functions
+//each of the recursive functions will need the following above it in order to use splitDimension:
+template<int SplitDimension>
+overlapsWith(point p) {
+  if (n->p[dim] >= p[dim]-radius) {
+    return true;
+  } else
+    return false;
+}
+rangeQuery(p, r) {
+  rangeRecurse(root, p, r) {
+    if (node->p != nth_element) {
+      add to list
+    }
+    if (left != null) {
+      if (overlapsWith(left) queryArea) {
+        recurse left
+      }
+    }
+    if (right != null) {
+      if (right region overlaps with queryArea) {
+        recurse right
+      }
+    }
+  }
+}
+
+knn(p,k) {
+  knnRecurse(vector(if using void/passByReference), root(to begin, just a node in the sig), p, (int)k, aabb);
+}
+knnRecurse(n, p, k) {
+  if (knn.size() < k) {
+    //list.add(n);
+    pushback...
+    pushheap...
+  }
+  else (n->p closer than worst(knnSF)) {
+    leftAABB = AABB
+    //list.add(n);
+    popheap...
+    popback...
+    pushback...
+    pushheap...
+  }
+  if (n->p != null) {
+    if (closest point to p on LC's AABB is closer than worst(knnSF)) {
+
+    }
+  }
+}
+maxHeap knnSF; //the type of knnSF should be a max heap
+aabb //access aligned bounding box
