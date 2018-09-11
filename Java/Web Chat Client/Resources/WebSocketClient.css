@@ -1,0 +1,60 @@
+.user_name { 
+	border-style: solid; 
+	border-width: thin;
+	border-color: rgb(64, 224, 208); 
+}
+
+.font_style {
+	font-family: "Lucinda Console", Monaco, monospace;
+	font-color: rgb(128, 128, 128);
+	font-size: 15px;
+}
+p {
+position: relative;
+width: 250px;
+height: 40px;
+padding: 5px;
+background: #92CFFF;
+/*-webkit-border-radius: 26px;
+        -moz-border-radius: 26px;*/
+border-radius: 26px;
+border: #D97F7F solid 3px;
+}
+.scroll {
+    width: 400px;
+    height: 500px;
+    overflow-y: auto;
+}
+
+
+/*p:after 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 17px 10px 0;
+border-color: #92CFFF transparent;
+display: block;
+width: 0;
+z-index: 1;
+bottom: -17px;
+left: 49px;
+}*/
+
+/*p:before 
+{
+content: '';
+position: absolute;
+border-style: solid;
+border-width: 19px 12px 0;
+border-color: #D97F7F transparent;
+display: block;
+width: 0;
+z-index: 0;
+bottom: -22px;
+left: 47px;
+}*/
+
+body {
+	background-image: url("PickleRick.jpg"); 
+}

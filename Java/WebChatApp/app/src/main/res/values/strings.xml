@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">WebChatApp</string>
+    <string name="user_name">Username</string>
+    <string name="input_room" translatable="false">Room</string>
+    <string name="button_name">Send</string>
+    <string name="message_post">Message</string>
+</resources>
